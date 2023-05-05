@@ -1,4 +1,6 @@
-const mockData = {
+import { fileExplorerInterface } from "./components/FileExplorer/types";
+
+const mockData: fileExplorerInterface = {
   items: [
     {
       type: "pdf",

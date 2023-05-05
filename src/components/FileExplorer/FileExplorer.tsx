@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { fileExplorerInterface } from "./types";
 import "./style.scss";
 
-const Folder = ({ folder }: { folder: any }) => {
+export const Folder = ({ folder }: { folder: any }) => {
   const [isOpen, setOpen] = useState(false);
 
   const handleFolderClick = () => {
@@ -51,9 +51,10 @@ const FileExplorer = ({ items }: fileExplorerInterface) => {
   return (
     <div className="file-explorer">
       <div className="file-explorer__header">
-        <button onClick={() => handleSort("type")}>Sort by Type</button>
-        <button onClick={() => handleSort("name")}>Sort by Name</button>
-        <button onClick={() => handleSort("size")}>Sort by Size</button>
+        <span>Sort By: </span>
+        <button onClick={() => handleSort("type")}>Type</button>
+        <button onClick={() => handleSort("name")}>Name</button>
+        <button onClick={() => handleSort("size")}>Size</button>
       </div>
       {sortedItems.map((item, index) => {
         if (item.type === "folder") {
