@@ -12,7 +12,7 @@ export const Folder = ({ folder }: { folder: any }) => {
   return (
     <div className="file-explore__folder">
       <h2 className="file-explorer__folder-title" onClick={handleFolderClick}>
-        {folder.name} [{folder.subFiles.length}]
+        {folder.name} {folder.type} [{folder.subFiles.length}]
         <span
           className={`file-explorer__open-icon ${
             isOpen ? "file-explorer__open-icon--open" : ""
