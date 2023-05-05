@@ -1,0 +1,49 @@
+.file-explorer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 50px;
+
+  &__folder {
+  }
+
+  &__folder-title {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__file-name {
+    cursor: pointer;
+  }
+  &__open-icon {
+    display: flex;
+    height: 27px;
+
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+    transform-origin: center;
+
+    &--open {
+      transform: rotate(90deg);
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+  }
+}
+
+// Desktop styles with media query
+@media only screen and (min-width: 768px) {
+  .file-explorer {
+    &__folder {
+    }
+
+    &__folder-title {
+    }
+    &__open-icon {
+      margin-left: 1rem;
+    }
+
+    &__file-name {
+    }
+  }
+}

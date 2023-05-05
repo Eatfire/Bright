@@ -1,4 +1,4 @@
-export interface data {
-  title: string;
+export interface headerData {
+  title?: string;
 }
-export default data;
+export default headerData;

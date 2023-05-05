@@ -1,13 +1,12 @@
-import React from 'react';
-import data from './data.json';
-import dataTypes from './data';
-import './style.scss';
+import React from "react";
+import dataTypes from "./data";
+import "./style.scss";
 const Header = ({ title }: dataTypes) => {
-    return (
-        <div className="header">
-            <h2 className="header__title">{data.title}</h2>
-        </div>
-    );
-}
+  return (
+    <header className="header">
+      <h2 className="header__title">{title}</h2>
+    </header>
+  );
+};
 
 export default Header;

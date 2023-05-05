@@ -1,8 +1,10 @@
-.header{
-    height: 80px;
-    padding: 20px;
-    background-color: #ccc;
-    &__title{
-        color: #000;
-    }
+.header {
+  display: flex;
+  height: 80px;
+  padding: 20px;
+  align-items: center;
+  background-color: #ccc;
+  &__title {
+    color: #000;
+  }
 }
